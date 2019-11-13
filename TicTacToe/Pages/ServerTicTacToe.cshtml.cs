@@ -16,11 +16,11 @@ namespace TicTacToe.Pages
 
         }
 
-        public void OnPost()
+        public void OnPost(string move)
         {
             if (Request.HasFormContentType)
             {
-                string move = Request.Form["move"];
+                //string move = Request.Form["move"];
                 string[] parts = move.Split("-");
                 char turn = parts[0].ToCharArray()[0];
                 int x = int.Parse(parts[1]);
