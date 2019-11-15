@@ -14,7 +14,7 @@
                 {
                     @if (Model.State[x, y] == 0)
                     {
-                        <input type="radio" name="move" id="cell-@x-@y" class="cell" value="@Model.Turn" />
+                        <input type="radio" name="move" class="cell" value="cell-@x-@y-@Model.Turn" />
                     }
                     else
                     {

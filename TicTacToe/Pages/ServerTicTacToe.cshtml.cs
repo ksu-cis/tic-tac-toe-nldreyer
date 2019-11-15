@@ -22,7 +22,8 @@ namespace TicTacToe.Pages
             {
                 //string move = Request.Form["move"];
                 string[] parts = move.Split("-");
-                char turn = parts[0].ToCharArray()[0];
+                
+                char turn = parts[3].ToCharArray()[0];
                 int x = int.Parse(parts[1]);
                 int y = int.Parse(parts[2]);
 
